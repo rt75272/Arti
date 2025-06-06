@@ -1,0 +1,11 @@
+[paths]
+pca_features_file_path = "D:/git-projects/knee-mesher/exports/knee_registration/transformed-pca-features-ors2025-mesh-registration.csv"
+additional_features_file_path = "D:/git-projects/knee-mesher/data/pca-analysis/ors2025/subject-weight-hkangle-bone-lengths.csv"
+knee_response_data_directory = "D:/git-projects/knee-mesher/data/pca-analysis/ors2025/csv_files/"
+additional_response_data_path = "D:/git-projects/knee-mesher/data/pca-analysis/ors2025/vahid-hka-updated-outputs.csv"
+history_output_filename = "Output_History_main_3.20_m_wH_VV.csv"
+output_path = "data/interim/feature_response_data.pkl"
+cleaned_data_directory = "data/preprocessed"
+
+[simulation]
+number_of_frames = 140 # one-indexed, not zero-indexed

@@ -1,0 +1,63 @@
+name: artifact
+channels:
+  - pytorch
+  - conda-forge
+  # - defaults
+dependencies:
+  - python  # Fix for vscode debugging plots
+  - pip
+
+  # BASICS
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib  # Fix for vscode debugging plots
+  - seaborn
+  - tqdm
+  # - click
+
+  # VISUALIZATION
+  - plotly  # Optuna output plots
+  # - altair
+
+  # ML, STATS & DEEP LEARNING
+  - optuna
+  - scikit-learn
+  - statsmodels
+  - xgboost
+  - catboost
+  - pytorch
+  - skorch  # sklearn-compatible metrics for PyTorch
+  - keras
+  
+  - xlrd  # pandas Excel _reading_
+  - fastparquet  # pandas PARQUET support
+  - orjson  # fix for parquet reading
+  - PyTables # pandas HDF5 support
+
+  # OTHER TOOLS
+  - pip:
+    - -e .  # install git checkout of autosegment in editable mode
+    # add here only pip-packages that are not available in conda/conda-forge!
+
+  - jupyterlab
+  - ipywidgets
+  - ipython
+
+# DEVELOPMENT ONLY PACKAGES (could also be kept in a separate environment file)
+  # - rope
+  # - pycodestyle
+  # - pydocstyle
+  # - pylint
+  # - black
+  # - xeus-python
+  # - pytest
+  # - pytest-cov
+  # - tox
+  # - nbdime  # diffing and merging of jupyter notebooks
+  # - nbstripout  # removes output from jupyter notebooks
+  # - sphinx
+  # - recommonmark
+  # - pre-commit>=2.9
+
+# PINS FOR BROKEN DEPENDENCIES
